@@ -5,12 +5,13 @@ import email from "../assets/contact/artistrebelgmail.webp";
 import location from "../assets/contact/artistrebelahemdabad.webp";
 import tag from "../assets/contact/artistrebeltag.webp";
 import { Link } from "react-router-dom";
+import bg from "../assets/contact/artistrebelbackground.png"
 
 function Contact() {
   return (
     <div className="h-full flex flex-col gap-24">
-      <div className="contact-bg pt-[90px] xl:pt-[140px] min-h-[140vh] sm:min-h-[1249px] xl:min-h-[1680px]">
-        <div className="w-full flex flex-col items-center justify-center px-4 sm:px-8 lg:px-16 xl:px-20 py-10">
+      <div className="contact-bg pt-[90px] xl:pt-[140px] min-h-[135vh] sm:min-h-[1249px] xl:min-h-[1680px]">
+        <div className="z-[40] w-full flex flex-col items-center justify-center px-4 sm:px-8 lg:px-16 xl:px-20 py-10">
           {/* Heading */}
           <h1 className="text-[38px] sm:text-[64px] xl:text-[84px] font-presser-bold font-extrabold text-black uppercase text-center leading-tight">
             Contact Us
@@ -108,24 +109,26 @@ function Contact() {
         </div>
       </div>
 
-
       <div className="relative">
-        <Link className="w-[436px] h-[130px] absolute -top-88 left-[8%]">
+        <Link className="w-[50%] sm:w-[50%] lg:w-[40%] max-w-[436px] absolute -top-70 sm:-top-88 left-[8%]">
           <img src={number} alt="" />
         </Link>
-        <Link className="w-[657.906px] h-[130px] absolute right-20 -top-48">
+        <Link className="w-[70%] sm:w-[50%] lg:w-[40%] max-w-[557px] absolute right-20 -top-25 sm:-top-48">
           <img src={email} alt="" />
         </Link>
-        <Link className="w-[507.906px] h-[130px] absolute right-92 bottom-0">
-          <img src={location} alt="" />
+        <Link className="absolute right-[40%] translate-x-1/2 bottom-0 w-[60%] sm:w-[50%] lg:w-[40%] max-w-[500px]">
+          <img src={location} alt="Location" className="w-full h-auto" />
         </Link>
-        <h1 className="text-[130px] text-center font-presser-bold">Thank You</h1>
-<div className="w-full h-[45vh]">
-  <div className="w-[655px] absolute left-1/2 -translate-x-1/2">
-    <img src={tag} alt="" />
-  </div>
-</div>
 
+  <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-center font-presser-bold">
+  Thank You
+</h1>
+
+        <div className="w-full max-[400px]:h-[23vh] max-[500px]:h-[28vh] h-[36vh] sm:h-[36vh] md:h-[44vh] lg:h-[38vh]">
+          <div className="w-[70%] sm:w-[50%] lg:w-[40%] max-w-[500px] absolute left-1/2 -translate-x-1/2">
+            <img src={tag} alt="" />
+          </div>
+        </div>
       </div>
       <Stickers />
     </div>
