@@ -110,15 +110,29 @@ function Contact() {
       </div>
 
       <div className="relative">
-        <Link className="w-[50%] sm:w-[50%] lg:w-[40%] max-w-[436px] absolute -top-70 sm:-top-88 left-[8%]">
-          <img src={number} alt="" />
-        </Link>
-        <Link className="w-[70%] sm:w-[50%] lg:w-[40%] max-w-[557px] absolute right-20 -top-25 sm:-top-48">
-          <img src={email} alt="" />
-        </Link>
-        <Link className="absolute right-[40%] translate-x-1/2 bottom-0 w-[60%] sm:w-[50%] lg:w-[40%] max-w-[500px]">
-          <img src={location} alt="Location" className="w-full h-auto" />
-        </Link>
+<a
+  href="tel:+911234567890" 
+  className="w-[50%] sm:w-[50%] lg:w-[40%] max-w-[436px] absolute -top-70 sm:-top-88 left-[8%]"
+>
+  <img src={number} alt="Call us" />
+</a>
+
+<a
+  href="mailto:artistrebel10@gmail.com"
+  className="w-[70%] sm:w-[50%] lg:w-[40%] max-w-[557px] absolute right-20 -top-25 sm:-top-48"
+>
+  <img src={email} alt="Email us" />
+</a>
+
+<a
+  href="https://goo.gl/maps/yourLocationLink"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="absolute right-[40%] translate-x-1/2 bottom-0 w-[60%] sm:w-[50%] lg:w-[40%] max-w-[500px]"
+>
+  <img src={location} alt="Location" className="w-full h-auto" />
+</a>
+
 
   <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-center font-presser-bold">
   Thank You
