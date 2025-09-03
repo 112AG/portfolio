@@ -4,7 +4,7 @@ import DelhiArtist from "../assets/cities/DelhiArtist.png";
 import kolkataArtist from "../assets/cities/kolkataArtist.png";
 import mumbaiArtist from "../assets/cities/mumbaiArtist.png";
 import varanasiArtist from "../assets/cities/varanasiArtist.png";
-
+import line from "../assets/cities/artistLine.png"
 function Experience() {
   const experiences = [
     {
@@ -67,14 +67,16 @@ function Experience() {
         className="relative pl-12 sm:pl-16 md:pl-20"
       >
         {/* Landmark Icon */}
-        <div className="absolute left-0 top-0 flex items-center justify-center w-10 sm:w-12 md:w-16">
+        <div className="absolute left-0 top-0 flex items-center justify-center w-10 sm:w-12 md:w-16 flex-col">
           <img
             src={exp.icon}
             alt={exp.location}
             className="h-10 sm:h-12 md:h-16 lg:h-20 object-contain"
             loading="lazy"
           />
-        </div>
+      {index !== experiences.length - 1 && (
+        <img src={line} alt="Line" />
+      )}        </div>
 
         {/* Text Info */}
         <div>

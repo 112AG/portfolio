@@ -22,7 +22,7 @@ function Slide() {
         let { isMobile, isTablet, isLargeScreen } = context.conditions;
 
         gsap.to(headRef.current, {
-          x: isMobile ? "-1298%" : isTablet ? "-480%" : isLargeScreen ? "-280%" : "-150%",
+          x: isMobile ? "-908%" : isTablet ? "-480%" : isLargeScreen ? "-280%" : "-150%",
           scrollTrigger: {
             trigger: ".page",
             start: "top 30%",

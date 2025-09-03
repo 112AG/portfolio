@@ -3,15 +3,15 @@
 
 @keyframes scrollRight {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-43%); }
+  100% { transform: translateX(-32%); }
 }
 @keyframes scrollLeft {
-  0% { transform: translateX(-50%); }
+  0% { transform: translateX(-36%); }
   100% { transform: translateX(0%); }
 }
 @keyframes scrollRightSlow {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-42%); }
+  100% { transform: translateX(-31%); }
 }
 
 .animate-scroll-right {

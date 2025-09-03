@@ -76,7 +76,7 @@ function Header() {
         </nav>
 
         {/* Mobile Menu Button */}
-        <button
+        {/* <button
           onClick={() => setOpen(!open)}
           className="md:hidden text-white focus:outline-none"
         >
@@ -113,12 +113,20 @@ function Header() {
               />
             </svg>
           )}
-        </button>
+        </button> */}
+        <div
+          onClick={() => setOpen(!open)}
+          className="flex flex-col items-center justify-center gap-[8px] relative"
+        >
+          <div className={`h-[2px] w-[22px] bg-white transition-all ease-in duration-300 rounded-full ${open? 'rotate-45':'rotate-0'}`}></div>
+          <div className={`h-[2px] w-[22px] bg-white transition-all ease-in duration-300 rounded-full ${open? 'hidden':'block'}`}></div>
+          <div className={`h-[2px] w-[22px] bg-white transition-all ease-in duration-300 absolute rounded-full ${open? '-rotate-45 bottom-0':'rotate-0'}`}></div>
+        </div>
       </div>
 
       {/* Mobile Nav */}
       {open && (
-        <div className="md:hidden bg-black px-6 py-4 space-y-4 text-lg font-semibold">
+<div className="md:hidden bg-black/40 backdrop-blur-[2px] px-6 py-4 space-y-4 text-lg font-semibold h-screen">
           <NavLink
             to="/work"
             onClick={() => setOpen(false)}
