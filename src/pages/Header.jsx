@@ -116,7 +116,7 @@ function Header() {
         </button> */}
         <div
           onClick={() => setOpen(!open)}
-          className="flex flex-col items-center justify-center gap-[8px] relative"
+          className="md:hidden flex flex-col items-center justify-center gap-[8px] relative"
         >
           <div className={`h-[2px] w-[22px] bg-white transition-all ease-in duration-300 rounded-full ${open? 'rotate-45':'rotate-0'}`}></div>
           <div className={`h-[2px] w-[22px] bg-white transition-all ease-in duration-300 rounded-full ${open? 'hidden':'block'}`}></div>
