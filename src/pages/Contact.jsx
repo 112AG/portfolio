@@ -10,13 +10,13 @@ import bg from "../assets/contact/artistrebelbackground.png"
 function Contact() {
   return (
     <div className="h-full flex flex-col gap-24">
-      <div className="contact-bg pt-[90px] xl:pt-[140px] min-h-[135vh] sm:min-h-[1249px] xl:min-h-[1680px]">
+      <div className="contact-bg pt-[34px] xl:pt-[140px] min-h-[135vh] sm:min-h-[1249px] xl:min-h-[1680px]">
         <div className="z-[40] w-full flex flex-col items-center justify-center px-4 sm:px-8 lg:px-16 xl:px-20 py-10">
           {/* Heading */}
-          <h1 className="text-[38px] sm:text-[64px] xl:text-[84px] font-presser-bold font-extrabold text-black uppercase text-center leading-tight">
+          <h1 className="text-[28px] sm:text-[64px] xl:text-[84px] font-presser-bold font-extrabold text-black uppercase text-center leading-tight">
             Contact Us
           </h1>
-          <p className="text-lg sm:text-xl 2xl:text-[28px] font-presser-bold font-bold text-black text-center mb-10">
+          <p className="text-[12px] sm:text-xl 2xl:text-[28px] font-presser-bold font-bold text-black text-center sm:mb-10">
             Ready to Make Your Brand Stand Out?
           </p>
 
@@ -24,82 +24,82 @@ function Contact() {
           <form className="w-full max-w-4xl grid grid-cols-2 sm:grid-cols-2 gap-6">
             {/* Name */}
             <div>
-              <label className="block text-sm xl:text-[20px] text-[#131B23] font-semibold mb-2">
+              <label className="block text-[10px] sm:text-sm xl:text-[20px] text-[#131B23] font-semibold mb-1 sm:mb-2">
                 Name
               </label>
               <input
                 type="text"
                 placeholder="Your Full Name"
-                className="w-full px-4 xl:px-8 xl:py-6 py-3 rounded-md bg-[#131B23] text-white placeholder-gray-400 focus:outline-none"
+                className="w-full px-2 sm:px-4 xl:px-8 xl:py-6 py-2 sm:py-3 rounded-md bg-[#131B23] text-white placeholder-gray-400 focus:outline-none"
               />
             </div>
 
             {/* Service */}
             <div>
-              <label className="block text-sm xl:text-[20px] text-[#131B23] font-semibold mb-2">
+              <label className="block text-[10px] sm:text-sm xl:text-[20px] text-[#131B23] font-semibold mb-1 sm:mb-2">
                 Service
               </label>
               <input
                 type="text"
                 placeholder="What do you need help with?"
-                className="w-full px-4  xl:px-8 xl:py-6 py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 focus:outline-none"
+                className="w-full px-2 sm:px-4 xl:px-8 xl:py-6 py-2 sm:py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 focus:outline-none"
               />
             </div>
 
             {/* Email */}
             <div>
-              <label className="block text-sm xl:text-[20px] text-[#131B23] font-semibold mb-2">
+              <label className="block text-[10px] sm:text-sm xl:text-[20px] text-[#131B23] font-semibold mb-1 sm:mb-2">
                 Email
               </label>
               <input
                 type="email"
                 placeholder="Your Email Address"
-                className="w-full px-4  xl:px-8 xl:py-6 py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 focus:outline-none"
+                className="w-full px-2 sm:px-4  xl:px-8 xl:py-6 py-2 sm:py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 focus:outline-none"
               />
             </div>
 
             {/* Budget */}
             <div>
-              <label className="block text-sm xl:text-[20px] text-[#131B23] font-semibold mb-2">
+              <label className="block text-[10px] sm:text-sm xl:text-[20px] text-[#131B23] font-semibold mb-1 sm:mb-2">
                 Budget
               </label>
               <input
                 type="text"
                 placeholder="Estimated Budget"
-                className="w-full px-4 xl:px-8 xl:py-6 py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 focus:outline-none"
+                className="w-full px-2 sm:px-4 xl:px-8 xl:py-6 py-2 sm:py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 focus:outline-none"
               />
             </div>
 
             {/* Phone */}
             <div>
-              <label className="block text-sm xl:text-[20px] text-[#131B23] font-semibold mb-2">
+              <label className="block text-[10px] sm:text-sm xl:text-[20px] text-[#131B23] font-semibold mb-1 sm:mb-2">
                 Phone Number (WhatsApp preferred):
               </label>
               <input
                 type="tel"
                 placeholder="+91"
-                className="w-full px-4 xl:px-8 xl:py-6 py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 focus:outline-none"
+                className="w-full px-2 sm:px-4 xl:px-8 xl:py-6 py-2 sm:py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 focus:outline-none"
               />
             </div>
 
             {/* Message */}
             <div>
-              <label className="block text-sm xl:text-[20px] text-[#131B23] font-semibold mb-2">
+              <label className="block text-[10px] sm:text-sm xl:text-[20px] text-[#131B23] font-semibold mb-1 sm:mb-2">
                 Message
               </label>
               <input
                 type="text"
                 placeholder="Tell me about your project"
-                className="w-full px-4 xl:px-8 xl:py-6 py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 focus:outline-none"
+                className="w-full px-2 sm:px-4 xl:px-8 xl:py-6 py-2 sm:py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 focus:outline-none"
               />
             </div>
           </form>
 
           {/* Submit Button */}
-          <div className="mt-10 2xl:scale-140">
+          <div className="mt-4 sm:mt-10 2xl:scale-140">
             <button
               type="submit"
-              className="px-12 font-presser-bold py-4 bg-[#EE3C4B] text-white font-bold text-lg rounded-[6px] 
+              className="px-7 sm:px-12 font-presser-bold py-2.5 sm:py-4 bg-[#EE3C4B] text-white font-bold text-[12px] sm:text-lg rounded-[6px] 
                hover:scale-105 transition-transform duration-300
                shadow-[0_6px_0_#0B0E14]"
             >
@@ -112,14 +112,14 @@ function Contact() {
       <div className="relative">
 <a
   href="tel:+911234567890" 
-  className="w-[50%] sm:w-[50%] lg:w-[40%] max-w-[436px] absolute -top-70 sm:-top-88 left-[8%]"
+  className="w-[36%] sm:w-[50%] lg:w-[40%] max-w-[436px] absolute top-38 min-[400px]:top-53 sm:-top-88 left-[8%]"
 >
   <img src={number} alt="Call us" />
 </a>
 
 <a
   href="mailto:artistrebel10@gmail.com"
-  className="w-[70%] sm:w-[50%] lg:w-[40%] max-w-[557px] absolute right-20 -top-25 sm:-top-48"
+  className="w-[50%] sm:w-[50%] lg:w-[40%] max-w-[557px] absolute right-20 -top-22 sm:-top-48"
 >
   <img src={email} alt="Email us" />
 </a>
@@ -128,7 +128,7 @@ function Contact() {
   href="https://goo.gl/maps/yourLocationLink"
   target="_blank"
   rel="noopener noreferrer"
-  className="absolute right-[40%] translate-x-1/2 bottom-0 w-[60%] sm:w-[50%] lg:w-[40%] max-w-[500px]"
+  className="absolute right-[40%] translate-x-1/2 bottom-0 w-[45%] sm:w-[50%] lg:w-[40%] max-w-[500px]"
 >
   <img src={location} alt="Location" className="w-full h-auto" />
 </a>
@@ -138,7 +138,7 @@ function Contact() {
   Thank You
 </h1>
 
-        <div className="w-full max-[400px]:h-[23vh] max-[500px]:h-[28vh] h-[36vh] sm:h-[36vh] md:h-[44vh] lg:h-[38vh]">
+        <div className="w-full max-[400px]:h-[24vh] max-[500px]:h-[28vh] h-[36vh] sm:h-[36vh] md:h-[44vh] lg:h-[38vh]">
           <div className="w-[70%] sm:w-[50%] lg:w-[40%] max-w-[500px] absolute left-1/2 -translate-x-1/2">
             <img src={tag} alt="" />
           </div>
