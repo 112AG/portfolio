@@ -10,7 +10,7 @@ import group126584 from '../assets/stickers/Group 126584.png';
 
 function Stickers() {
   return (
-<div className="w-full bg-gray-700 max-w-[300px] sm:max-w-[640px] md:max-w-3xl lg:max-w-5xl xl:max-w-6xl mx-auto overflow-hidden py-18 min-h-[300px] relative flex flex-wrap justify-center items-center gap-6 p-4">
+<div className="w-full max-w-[300px] sm:max-w-[640px] md:max-w-3xl lg:max-w-5xl xl:max-w-6xl mx-auto overflow-hidden py-18 min-h-[188px] sm:min-h-[244px] relative flex flex-wrap justify-center items-center gap-6 p-4">
   <img src={jugadSpecialist} alt="Jugad Specialist" 
     className="w-25 sm:w-36 md:w-40 lg:w-44 xl:w-44 h-auto transform rotate-12 absolute 
                bottom-16 sm:bottom-20 md:bottom-22 lg:bottom-20 xl:bottom-20 
