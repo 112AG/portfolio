@@ -9,8 +9,8 @@ import bg from "../assets/contact/artistrebelbackground.png"
 
 function Contact() {
   return (
-    <div className="h-full flex flex-col gap-24">
-      <div className="contact-bg pt-[84px] xl:pt-[140px] min-h-[105vh] sm:min-h-[1249px] xl:min-h-[1680px]">
+    <div className="h-full flex flex-col gap-12 sm:gap-24">
+      <div className="contact-bg pt-[74px] xl:pt-[140px] min-h-[105vh] sm:min-h-[1249px] xl:min-h-[1680px]">
         <div className="z-[40] w-full flex flex-col items-center justify-center px-4 sm:px-8 lg:px-16 xl:px-20 py-10">
           {/* Heading */}
           <h1 className="text-[28px] sm:text-[64px] xl:text-[84px] font-presser-bold font-extrabold text-black uppercase text-center leading-tight">
@@ -112,14 +112,14 @@ function Contact() {
       <div className="relative">
 <a
   href="tel:+911234567890" 
-  className="w-[36%] sm:w-[50%] lg:w-[40%] max-w-[436px] absolute top-38 min-[400px]:top-53 sm:-top-88 left-[8%]"
+  className="w-[36%] sm:w-[50%] lg:w-[40%] max-w-[436px] absolute top-38 min-[400px]:top-46 -rotate-36 sm:rotate-0 sm:-top-88 left-[8%]"
 >
   <img src={number} alt="Call us" />
 </a>
 
 <a
   href="mailto:artistrebel10@gmail.com"
-  className="w-[50%] sm:w-[50%] lg:w-[40%] max-w-[557px] absolute right-20 -top-22 sm:-top-48"
+  className="w-[40%] sm:w-[50%] lg:w-[40%] max-w-[557px] absolute sm:right-20 rotate-12 sm:rotate-0 -top-12 sm:-top-48"
 >
   <img src={email} alt="Email us" />
 </a>
@@ -128,7 +128,7 @@ function Contact() {
   href="https://goo.gl/maps/yourLocationLink"
   target="_blank"
   rel="noopener noreferrer"
-  className="absolute right-[32%] translate-x-1/2 bottom-0 w-[45%] sm:w-[50%] lg:w-[40%] max-w-[340px]"
+  className="absolute right-[32%] translate-x-1/2 bottom-0 w-[38%] sm:w-[50%] lg:w-[40%] max-w-[340px]"
 >
   <img src={location} alt="Location" className="w-full h-auto" />
 </a>
