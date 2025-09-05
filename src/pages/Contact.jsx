@@ -10,7 +10,7 @@ import bg from "../assets/contact/artistrebelbackground.png"
 function Contact() {
   return (
     <div className="h-full flex flex-col gap-24">
-      <div className="contact-bg pt-[84px] xl:pt-[140px] min-h-[135vh] sm:min-h-[1249px] xl:min-h-[1680px]">
+      <div className="contact-bg pt-[84px] xl:pt-[140px] min-h-[105vh] sm:min-h-[1249px] xl:min-h-[1680px]">
         <div className="z-[40] w-full flex flex-col items-center justify-center px-4 sm:px-8 lg:px-16 xl:px-20 py-10">
           {/* Heading */}
           <h1 className="text-[28px] sm:text-[64px] xl:text-[84px] font-presser-bold font-extrabold text-black uppercase text-center leading-tight">
@@ -21,7 +21,7 @@ function Contact() {
           </p>
 
           {/* Form */}
-          <form className="w-full max-w-4xl grid grid-cols-2 sm:grid-cols-2 gap-6">
+          <form className="w-full max-w-4xl grid grid-cols-2 sm:grid-cols-2 gap-2 sm:gap-6">
             {/* Name */}
             <div>
               <label className="block text-[10px] sm:text-sm xl:text-[20px] text-[#131B23] font-semibold mb-1 sm:mb-2">
@@ -30,7 +30,7 @@ function Contact() {
               <input
                 type="text"
                 placeholder="Your Full Name"
-                className="w-full px-2 sm:px-4 xl:px-8 xl:py-6 py-2 sm:py-3 rounded-md bg-[#131B23] text-white placeholder-gray-400 focus:outline-none"
+                className="w-full px-2 sm:px-4 xl:px-8 xl:py-6 py-1.5 pb-2 sm:pb-0 sm:py-3 rounded-md bg-[#131B23] text-white placeholder-gray-400 placeholder:text-[12px] focus:outline-none"
               />
             </div>
 
@@ -42,7 +42,7 @@ function Contact() {
               <input
                 type="text"
                 placeholder="What do you need help with?"
-                className="w-full px-2 sm:px-4 xl:px-8 xl:py-6 py-2 sm:py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 focus:outline-none"
+                className="w-full px-2 sm:px-4 xl:px-8 xl:py-6 py-1.5 pb-2 sm:pb-0 sm:py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 placeholder:text-[12px] focus:outline-none"
               />
             </div>
 
@@ -54,7 +54,7 @@ function Contact() {
               <input
                 type="email"
                 placeholder="Your Email Address"
-                className="w-full px-2 sm:px-4  xl:px-8 xl:py-6 py-2 sm:py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 focus:outline-none"
+                className="w-full px-2 sm:px-4  xl:px-8 xl:py-6 py-1.5 pb-2 sm:pb-0 sm:py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 placeholder:text-[12px] focus:outline-none"
               />
             </div>
 
@@ -66,19 +66,19 @@ function Contact() {
               <input
                 type="text"
                 placeholder="Estimated Budget"
-                className="w-full px-2 sm:px-4 xl:px-8 xl:py-6 py-2 sm:py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 focus:outline-none"
+                className="w-full px-2 sm:px-4 xl:px-8 xl:py-6 py-1.5 pb-2 sm:pb-0 sm:py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 placeholder:text-[12px] focus:outline-none"
               />
             </div>
 
             {/* Phone */}
             <div>
               <label className="block text-[10px] sm:text-sm xl:text-[20px] text-[#131B23] font-semibold mb-1 sm:mb-2">
-                Phone Number (WhatsApp preferred):
+                Phone Number <span className="hidden sm:block">(WhatsApp preferred):</span>
               </label>
               <input
                 type="tel"
                 placeholder="+91"
-                className="w-full px-2 sm:px-4 xl:px-8 xl:py-6 py-2 sm:py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 focus:outline-none"
+                className="w-full px-2 sm:px-4 xl:px-8 xl:py-6 py-1.5 pb-2 sm:pb-0 sm:py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 placeholder:text-[12px] focus:outline-none"
               />
             </div>
 
@@ -90,7 +90,7 @@ function Contact() {
               <input
                 type="text"
                 placeholder="Tell me about your project"
-                className="w-full px-2 sm:px-4 xl:px-8 xl:py-6 py-2 sm:py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 focus:outline-none"
+                className="w-full px-2 sm:px-4 xl:px-8 xl:py-6 py-1.5 pb-2 sm:pb-0 sm:py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 placeholder:text-[12px] focus:outline-none"
               />
             </div>
           </form>
