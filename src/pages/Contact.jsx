@@ -10,7 +10,7 @@ import bg from "../assets/contact/artistrebelbackground.png"
 function Contact() {
   return (
     <div className="h-full flex flex-col gap-24">
-      <div className="contact-bg pt-[34px] xl:pt-[140px] min-h-[135vh] sm:min-h-[1249px] xl:min-h-[1680px]">
+      <div className="contact-bg pt-[84px] xl:pt-[140px] min-h-[135vh] sm:min-h-[1249px] xl:min-h-[1680px]">
         <div className="z-[40] w-full flex flex-col items-center justify-center px-4 sm:px-8 lg:px-16 xl:px-20 py-10">
           {/* Heading */}
           <h1 className="text-[28px] sm:text-[64px] xl:text-[84px] font-presser-bold font-extrabold text-black uppercase text-center leading-tight">
@@ -128,7 +128,7 @@ function Contact() {
   href="https://goo.gl/maps/yourLocationLink"
   target="_blank"
   rel="noopener noreferrer"
-  className="absolute right-[40%] translate-x-1/2 bottom-0 w-[45%] sm:w-[50%] lg:w-[40%] max-w-[500px]"
+  className="absolute right-[32%] translate-x-1/2 bottom-0 w-[45%] sm:w-[50%] lg:w-[40%] max-w-[340px]"
 >
   <img src={location} alt="Location" className="w-full h-auto" />
 </a>
@@ -139,7 +139,7 @@ function Contact() {
 </h1>
 
         <div className="w-full max-[400px]:h-[24vh] max-[500px]:h-[28vh] h-[36vh] sm:h-[36vh] md:h-[44vh] lg:h-[38vh]">
-          <div className="w-[70%] sm:w-[50%] lg:w-[40%] max-w-[500px] absolute left-1/2 -translate-x-1/2">
+          <div className="w-[70%] sm:w-[50%] lg:w-[40%] max-w-[460px] absolute left-1/2 -translate-x-1/2">
             <img src={tag} alt="" />
           </div>
         </div>
