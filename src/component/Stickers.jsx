@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import jugadSpecialist from "../assets/stickers/jugadSpecialist.png";
 import instagram from "../assets/stickers/instagram.png";
 import whatsapp from "../assets/stickers/whatsapp.png";
@@ -7,27 +7,11 @@ import youtube from "../assets/stickers/youtube.png";
 import linkedin from "../assets/stickers/linkedin.png";
 import designCardio from "../assets/stickers/designCardio.png";
 import group126584 from "../assets/stickers/Group 126584.png";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
 
 function Stickers() {
-  const imgRef = useRef(null);
-  const imgRefTwo = useRef(null);
-
-useGSAP(() => {
-  gsap.to([imgRef.current, imgRefTwo.current], {
-    rotation: 360,
-    duration: 12,
-    repeat: -1,
-    yoyo:true,
-    transformOrigin: "center center",
-  });
-}, { scope: imgRef });
-
   return (
-    <div className="w-full max-w-[300px] sm:max-w-[640px] md:max-w-3xl lg:max-w-5xl xl:max-w-6xl mx-auto overflow-hidden py-18 min-h-[188px] sm:min-h-[264px] relative flex flex-wrap justify-center items-center gap-6 p-4">
+    <div className="parent w-full max-w-[300px] sm:max-w-[640px] md:max-w-3xl lg:max-w-5xl xl:max-w-6xl mx-auto overflow-hidden py-18 min-h-[188px] sm:min-h-[264px] relative flex flex-wrap justify-center items-center gap-6 p-4">
       <img
-        ref={imgRef}
         src={jugadSpecialist}
         alt="Jugad Specialist"
         className="w-25 sm:w-36 md:w-40 lg:w-44 xl:w-44 h-auto transform rotate-12 absolute 
@@ -84,7 +68,6 @@ useGSAP(() => {
       />
 
       <img
-        ref={imgRefTwo}
         src={group126584}
         alt="Thinking 10% Clicking 90%"
         className="w-30 sm:w-44 md:w-48 lg:w-54 xl:w-54 h-auto transform -rotate-12 absolute 

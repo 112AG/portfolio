@@ -6,28 +6,33 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function Slide() {
+  const headRef = React.useRef();
 
-    const headRef = React.useRef();
-   useGSAP(() => {
+  useGSAP(() => {
     let mm = gsap.matchMedia();
 
-     mm.add(
+    mm.add(
       {
-        // breakpoints
         isMobile: "(max-width: 768px)",
         isTablet: "(min-width: 769px) and (max-width: 1279px)",
         isLargeScreen: "(min-width: 1280px)",
       },
-      (context) => {
-        let { isMobile, isTablet, isLargeScreen } = context.conditions;
+      () => {
+        const el = headRef.current;
+        const elWidth = el.scrollWidth; // total text width
+        const vw = window.innerWidth;   // viewport width
 
-        gsap.to(headRef.current, {
-          x: isMobile ? "-908%" : isTablet ? "-480%" : isLargeScreen ? "-280%" : "-150%",
+        // how much we need to move (element width - viewport width)
+        const moveX = -(elWidth - vw);
+
+        gsap.to(el, {
+          x: moveX, // ✅ always scroll full width regardless of screen
+          ease: "none",
           scrollTrigger: {
             trigger: ".page",
-            start: "top 30%",
+            start: "top 50%",
             end: "top -80%",
-            scrub: 5,
+            scrub: 2,
             pin: true,
             markers: false,
           },
@@ -38,11 +43,14 @@ function Slide() {
 
   return (
     <div className='page'>
-              <h1 ref={headRef} className="text-[120px] md:text-[200px] whitespace-nowrap text-[#696969] text-center mt-12 font-presser-bold">
+      <h1 
+        ref={headRef} 
+        className="text-[50px] sm:text-[80px] md:text-[120px] lg:text-[200px] whitespace-nowrap text-[#696969] text-center mt-12 font-presser-bold"
+      >
         Building Brands, Designing Experiences.
       </h1>
     </div>
   )
 }
 
-export default Slide
+export default Slide;

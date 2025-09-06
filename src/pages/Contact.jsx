@@ -5,7 +5,7 @@ import email from "../assets/contact/artistrebelgmail.webp";
 import location from "../assets/contact/artistrebelahemdabad.webp";
 import tag from "../assets/contact/artistrebeltag.webp";
 import { Link } from "react-router-dom";
-import bg from "../assets/contact/artistrebelbackground.png"
+import bg from "../assets/contact/artistrebelbackground.png";
 
 function Contact() {
   return (
@@ -73,7 +73,8 @@ function Contact() {
             {/* Phone */}
             <div>
               <label className="block text-[10px] sm:text-sm xl:text-[20px] text-[#131B23] font-semibold mb-1 sm:mb-2">
-                Phone Number <span className="hidden sm:block">(WhatsApp preferred):</span>
+                Phone Number{" "}
+                <span className="hidden sm:block">(WhatsApp preferred):</span>
               </label>
               <input
                 type="tel"
@@ -110,33 +111,32 @@ function Contact() {
       </div>
 
       <div className="relative">
-<a
-  href="tel:+911234567890" 
-  className="w-[36%] sm:w-[50%] lg:w-[40%] max-w-[436px] absolute top-38 min-[400px]:top-46 -rotate-36 sm:rotate-0 sm:-top-88 left-[8%]"
->
-  <img src={number} alt="Call us" />
-</a>
+        <a
+          href="tel:+911234567890"
+          className="w-[36%] sm:w-[26%] lg:w-[30%] 2xl:w-[40%] max-w-[436px] absolute top-38 min-[400px]:top-46 -rotate-36 sm:rotate-0 sm:-top-88 left-[8%]"
+        >
+          <img src={number} alt="Call us" />
+        </a>
 
-<a
-  href="mailto:artistrebel10@gmail.com"
-  className="w-[40%] sm:w-[50%] lg:w-[40%] max-w-[557px] absolute sm:right-20 rotate-12 sm:rotate-0 -top-12 sm:-top-48"
->
-  <img src={email} alt="Email us" />
-</a>
+        <a
+          href="mailto:artistrebel10@gmail.com"
+          className="w-[40%] sm:w-[26%] lg:w-[30%] 2xl:w-[40%]  max-w-[557px] absolute sm:right-14 rotate-12 sm:rotate-0 -top-16 sm:-top-48"
+        >
+          <img src={email} alt="Email us" />
+        </a>
 
-<a
-  href="https://goo.gl/maps/yourLocationLink"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="absolute right-[32%] translate-x-1/2 bottom-0 w-[38%] sm:w-[50%] lg:w-[40%] max-w-[340px]"
->
-  <img src={location} alt="Location" className="w-full h-auto" />
-</a>
+        <a
+          href="https://goo.gl/maps/yourLocationLink"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute right-[32%] translate-x-1/2 -bottom-10 sm:bottom-0 w-[38%] sm:w-[28%] lg:w-[20%] 2xl:w-[40%] max-w-[340px]"
+        >
+          <img src={location} alt="Location" className="w-full h-auto" />
+        </a>
 
-
-  <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-center font-presser-bold">
-  Thank You
-</h1>
+        <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-center font-presser-bold">
+          Thank You
+        </h1>
 
         <div className="w-full max-[400px]:h-[24vh] max-[500px]:h-[28vh] h-[36vh] sm:h-[36vh] md:h-[44vh] lg:h-[38vh]">
           <div className="w-[70%] sm:w-[50%] lg:w-[40%] max-w-[460px] absolute left-1/2 -translate-x-1/2">
