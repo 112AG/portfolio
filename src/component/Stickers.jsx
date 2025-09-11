@@ -23,8 +23,8 @@ function Stickers() {
         src={instagram}
         alt="Instagram"
         className="w-24 sm:w-40 md:w-44 lg:w-48 xl:w-48 h-auto transform rotate-2 absolute 
-               bottom-34 sm:bottom-36 md:bottom-42 lg:bottom-42 xl:bottom-37 
-               left-[33.5%] sm:left-[32%] md:left-[32.5%] lg:left-[32%] xl:left-[32%]"
+               bottom-34 sm:bottom-36 md:bottom-42 lg:bottom-38 xl:bottom-37 
+               left-[33.5%] sm:left-[32%] md:left-[32.5%] lg:left-[33%] xl:left-[32%]"
       />
 
       <img
@@ -32,23 +32,23 @@ function Stickers() {
         alt="WhatsApp"
         className="w-23 sm:w-40 md:w-44 lg:w-48 xl:w-48 h-auto transform absolute 
                bottom-24.5 sm:bottom-25 md:bottom-32 lg:bottom-30 xl:bottom-32 
-               left-[43%] -rotate-8 sm:left-[49%] sm:-rotate-10 md:rotate-0 md:left-[52%] lg:left-[47.5%] xl:left-[47.5%]"
+               left-[43%] -rotate-8 sm:left-[49%] sm:-rotate-10 md:rotate-0 md:left-[52%] lg:left-[50.5%] xl:left-[47.5%]"
       />
 
       <img
         src={pinterest}
         alt="Pinterest"
-        className="w-22 sm:w-36 md:w-40 lg:w-44 xl:w-44 h-auto transform rotate-0 absolute 
-               bottom-20 sm:bottom-17.5 md:bottom-22.5 lg:bottom-20 xl:bottom-26 
-               left-[40%] sm:left-[48.5%] md:left-[47.5%] md:-rotate-10 lg:left-[46%] xl:left-[42.5%]"
+        className="w-22 sm:w-36 md:w-40 lg:w-44 xl:w-44 h-auto transform absolute 
+               bottom-20 sm:bottom-17.5 md:bottom-22.5 lg:bottom-22 xl:bottom-20
+               left-[40%] sm:left-[48.5%] md:left-[47.5%] 2xl:-rotate-10 rotate-0 lg:left-[45.6%] xl:left-[45%]"
       />
 
       <img
         src={youtube}
         alt="YouTube"
         className="w-24 sm:w-40 md:w-44 lg:w-48 xl:w-48 h-auto transform rotate-2 absolute 
-               bottom-0 sm:-bottom-2.5 md:-bottom-1.5 lg:-bottom-[10px] lg:rotate-10 xl:rotate-0 xl:bottom-5.5 
-               left-[54%] sm:left-[48.5%] sm:rotate-10 md:rotate-0  md:left-[46%] lg:left-[46%] xl:left-[46%]"
+               bottom-0 sm:-bottom-2.5 md:-bottom-1.5 lg:-bottom-[10px] lg:rotate-10 xl:rotate-10 xl:-bottom-3
+               left-[54%] sm:left-[48.5%] sm:rotate-10 md:rotate-0  md:left-[46%] lg:left-[46%] xl:left-[44%]"
       />
 
       <img
@@ -71,8 +71,8 @@ function Stickers() {
         src={group126584}
         alt="Thinking 10% Clicking 90%"
         className="w-30 sm:w-44 md:w-48 lg:w-54 xl:w-54 h-auto transform -rotate-12 absolute 
-               bottom-8 sm:bottom-0 md:bottom-0 lg:bottom-2 xl:bottom-2 
-               left-[64.5%] sm:left-[68%] md:left-[66.5%] md:rotate-10 lg:rotate-0 lg:left-[61%] xl:left-[60%]"
+               bottom-8 sm:bottom-0 md:bottom-0 lg:-bottom-4 xl:bottom-2 
+               left-[64.5%] sm:left-[68%] md:left-[66.5%] md:rotate-10 lg:rotate-0 lg:left-[64%] xl:left-[60%]"
       />
     </div>
   );
