@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <header className="fixed top-0 left-0 w-full text-white z-50">
-      <div className="max-w-[1440px] mx-auto flex items-center justify-between px-6 sm:px-12 py-4">
+      <div className=" mx-auto flex items-center justify-between px-6 sm:px-12 py-4">
         {/* Logo */}
         <Link
           to="/"
