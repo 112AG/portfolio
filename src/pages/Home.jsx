@@ -147,7 +147,7 @@ function Home() {
             <span ref={num2Ref}>0</span>
             <span>+</span>
           </div>
-          <div className="text-[#0a0a0a] bg text-center absolute max-[320px]:bottom-[26.5%] max-[320px]:-right-[50%] max-[1400px]:bottom-[28%] max-[1441px]:right-[5%] max-[2400px]:-right-[50%] max-[2000px]:bottom-[26.5%] max-[2000px]:right-[6.5%] right-[8%] bottom-[26.5%] -rotate-[17deg] max-[320px]:text-[14px] max-[500px]:text-[18px] max-[600px]:text-[22px] max-[800px]:text-[26px] max-[1000px]:text-[34px] max-[1200px]:text-[38px] max-[1400px]:text-[44px] max-[1800px]:text-[84px] max-[2000px]:text-[96px] min-[2000px]:text-[108px] font-presser-bold">
+          <div className="text-[#0a0a0a] bg text-center absolute max-[320px]:bottom-[26.5%] max-[320px]:-right-[50%] max-[1400px]:bottom-[28%] max-[1441px]:right-[9.5%] max-[2400px]:-right-[50%] max-[2000px]:bottom-[26.5%] max-[2000px]:right-[6.5%] right-[8%] bottom-[26.5%] -rotate-[17deg] max-[320px]:text-[14px] max-[500px]:text-[18px] max-[600px]:text-[22px] max-[800px]:text-[26px] max-[1000px]:text-[34px] max-[1200px]:text-[38px] max-[1400px]:text-[44px] max-[1800px]:text-[84px] max-[2000px]:text-[96px] min-[2000px]:text-[108px] font-presser-bold">
             <span ref={num3Ref}>0</span>
             <span>+</span>
           </div>
