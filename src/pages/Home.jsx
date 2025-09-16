@@ -139,15 +139,28 @@ function Home() {
             alt="Background"
             className="object-cover object-center"
           />
-          <div className="text-[#0a0a0a] text-center  absolute max-[320px]:bottom-[26.5%] max-[320px]:left-[14%] max-[1400px]:bottom-[28.5%] max-[1400px]:left-[15%] max-[2000px]:bottom-[26.5%] max-[2000px]:left-[13%] bottom-[26.5%] left-[13%] rotate-[17deg] max-[320px]:text-[14px] max-[500px]:text-[18px] max-[600px]:text-[22px] max-[800px]:text-[26px] max-[1000px]:text-[34px] max-[1200px]:text-[38px] max-[1400px]:text-[44px] max-[1800px]:text-[84px] max-[2000px]:text-[96px] min-[2000px]:text-[108px] font-presser-bold">
+          <div className="text-[#0a0a0a] text-center  absolute max-[320px]:bottom-[26.5%] max-[320px]:left-[14%] max-[1400px]:bottom-[28.5%] max-[1400px]:left-[15%] max-[2000px]:bottom-[26.5%] max-[2000px]:left-[13%] bottom-[27.5%] left-[15%] rotate-[17deg] text-[4vw] font-presser-bold">
             <span ref={num1Ref}>0</span>
             <span>+</span>
           </div>
-          <div className="text-[#0a0a0a] absolute max-[320px]:bottom-[21.5%] max-[320px]:left-[0%] max-[1400px]:bottom-[23.5%] max-[1400px]:left-[0%] max-[2000px]:bottom-[21.5%] max-[2000px]:left-[0%] bottom-[21.5%] w-full text-center max-[320px]:text-[14px] max-[500px]:text-[18px] max-[600px]:text-[22px] max-[800px]:text-[26px] max-[1000px]:text-[34px] max-[1200px]:text-[38px] max-[1400px]:text-[44px] max-[1800px]:text-[84px] max-[2000px]:text-[96px] min-[2000px]:text-[108px] font-presser-bold">
+          <div className="text-[#0a0a0a] absolute max-[320px]:bottom-[21.5%] max-[320px]:left-[0%] max-[1400px]:bottom-[23.5%] max-[1400px]:left-[0%] max-[2000px]:bottom-[21.5%] max-[2000px]:left-[0%] bottom-[22.5%] w-full text-center text-[4vw] font-presser-bold">
             <span ref={num2Ref}>0</span>
             <span>+</span>
           </div>
-          <div className="text-[#0a0a0a] bg text-center absolute max-[320px]:bottom-[26.5%] max-[320px]:-right-[50%] max-[1400px]:bottom-[28%] max-[1441px]:right-[9.5%] max-[2400px]:-right-[50%] max-[2000px]:bottom-[26.5%] max-[2000px]:right-[6.5%] right-[8%] bottom-[26.5%] -rotate-[17deg] max-[320px]:text-[14px] max-[500px]:text-[18px] max-[600px]:text-[22px] max-[800px]:text-[26px] max-[1000px]:text-[34px] max-[1200px]:text-[38px] max-[1400px]:text-[44px] max-[1800px]:text-[84px] max-[2000px]:text-[96px] min-[2000px]:text-[108px] font-presser-bold">
+          <div
+            className="
+    absolute 
+    bottom-[26.5%] 
+    -right-[0%] 
+    -translate-x-1/2 
+    text-[#0a0a0a] 
+    text-center 
+    -rotate-[17deg] 
+    font-presser-bold 
+    whitespace-nowrap
+    text-[4vw]
+  "
+          >
             <span ref={num3Ref}>0</span>
             <span>+</span>
           </div>
