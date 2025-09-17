@@ -74,10 +74,10 @@ function HeroOne() {
 
 
   return (
-    <div className="w-full mx-auto mb-12 px-4 sm:px-6 lg:px-10 pt-[96px]">
+    <div className="w-full mx-auto mb-12 px-4 sm:px-6 lg:px-10 pt-[96px] md:pt-[124px]">
       {/* Heading */}
       <h1
-        className="font-700 text-center font-presser-bold leading-[1.1] text-[7.5vw] xl:text-[8vw]"
+        className="font-700 text-center font-presser-bold leading-[1.1] text-[7.5vw] xl:text-[7.8vw] 2xl:text-[8vw]"
         ref={textRef}
       >
         {text.split("").map((char, i) => (

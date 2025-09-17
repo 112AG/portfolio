@@ -25,7 +25,7 @@ function Header() {
           <NavLink
             to="/work"
             className={({ isActive }) =>
-              `px-3 py-1 rounded-full font-medium transition-colors duration-300 ease-in-out ${
+              `px-3 py-1 pb-1.5 rounded-full font-medium transition-colors duration-300 ease-in-out ${
                 isActive
                   ? "bg-yellow-400 text-black font-bold"
                   : "text-white hover:text-yellow-400"
