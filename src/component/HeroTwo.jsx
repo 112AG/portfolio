@@ -70,9 +70,26 @@ const repeatImages = (arr, times = 2) => Array(times).fill(arr).flat();
 function HeroTwo() {
   return (
     <div className="w-full overflow-hidden py-18">
-      <h1 className="w-full break-words text-center font-extrabold leading-tight text-[30px] xs:text-[22px] sm:text-[53px] md:text-[62px] lg:text-[84px] xl:text-[94px] text-[#EEE6E2] mb-8  font-presser-bold">
-        WORK WITH
-      </h1>
+<h1
+  className="
+    w-full 
+    break-words 
+    text-center 
+    font-extrabold 
+    leading-tight 
+    text-[#EEE6E2] px-2
+    mb-8 
+    font-presser-bold
+    text-[30px]   
+    sm:text-[56px]
+    md:text-[72px]
+    lg:text-[88px]         
+    xl:text-[96px]         
+  "
+>
+  WORK WITH
+</h1>
+
       <div className="space-y-2 sm:space-y-6">
         {/* Layer 1: scroll right */}
         <div className="overflow-hidden w-full">

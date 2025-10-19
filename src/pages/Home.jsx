@@ -52,7 +52,8 @@ function Home() {
         ease: "power3.out",
         scrollTrigger: {
           trigger: imgRef.current,
-          start: "top bottom",
+          markers: false,
+          start: "top 70%",
           end: "bottom top",
           toggleActions: "play none none reverse",
         },
@@ -108,7 +109,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden w-full">
       <HeroOne />
 
       <div className="relative inline-block">
@@ -130,20 +131,38 @@ function Home() {
       <HeroTwo />
 
       <div className="w-[80%] mx-auto">
-        <h1 className="w-full break-words text-center font-extrabold leading-tight text-[30px] xs:text-[22px] sm:text-[53px] md:text-[62px] lg:text-[84px] xl:text-[94px] text-[#EEE6E2] mb-8 font-presser-bold">
-          CLIENT OVERVIEW
-        </h1>
+ <h1
+  className="
+    w-full 
+    break-words 
+    text-center 
+    font-extrabold 
+    leading-tight 
+    text-[#EEE6E2] 
+    mb-8 
+    font-presser-bold
+    text-[24px]
+    sm:text-[28px]
+    md:text-[32px]   
+    lg:text-[34px]       
+    xl:text-[40px]       
+    2xl:text-[40px]      
+  "
+>
+  CLIENT OVERVIEW
+</h1>
+
         <div className="numStart relative">
           <img
             src={work2}
             alt="Background"
             className="object-cover object-center"
           />
-          <div className="text-[#0a0a0a] text-center  absolute max-[320px]:bottom-[26.5%] max-[320px]:left-[14%] max-[1400px]:bottom-[28.5%] max-[1400px]:left-[15%] max-[2000px]:bottom-[26.5%] max-[2000px]:left-[13%] bottom-[27.5%] left-[15%] rotate-[17deg] text-[4vw] font-presser-bold">
+          <div className="text-[#0a0a0a] text-center  absolute max-[320px]:bottom-[26.5%] max-[320px]:left-[14%] max-[2000px]:bottom-[27.5%] max-[2000px]:left-[15%] bottom-[27.5%] left-[15%] rotate-[17deg] text-[4vw] font-presser-bold">
             <span ref={num1Ref}>0</span>
             <span>+</span>
           </div>
-          <div className="text-[#0a0a0a] absolute max-[320px]:bottom-[21.5%] max-[320px]:left-[0%] max-[1400px]:bottom-[23.5%] max-[1400px]:left-[0%] max-[2000px]:bottom-[21.5%] max-[2000px]:left-[0%] bottom-[22.5%] w-full text-center text-[4vw] font-presser-bold">
+          <div className="text-[#0a0a0a] absolute max-[320px]:bottom-[21.5%] max-[320px]:left-[0%] max-[1800px]:bottom-[23.5%] max-[1800px]:left-[0%] max-[2000px]:bottom-[21.5%] max-[2000px]:left-[0%] bottom-[21.5%] w-full text-center text-[4vw] font-presser-bold">
             <span ref={num2Ref}>0</span>
             <span>+</span>
           </div>

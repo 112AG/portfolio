@@ -21,7 +21,20 @@ function Header() {
         </Link>
 
         {/* Desktop Nav */}
+        
         <nav className="hidden md:flex gap-8 text-lg font-semibold">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `px-3 py-1 pb-1.5 rounded-full font-medium transition-colors duration-300 ease-in-out ${
+                isActive
+                  ? "bg-yellow-400 text-black font-bold"
+                  : "text-white hover:text-yellow-400"
+              }`
+            }
+          >
+            Home
+          </NavLink>
           <NavLink
             to="/work"
             className={({ isActive }) =>
@@ -35,7 +48,7 @@ function Header() {
             Work
           </NavLink>
 
-          <NavLink
+          {/* <NavLink
             to="/about"
             className={({ isActive }) =>
               `px-3 py-1 rounded-full font-medium transition-colors duration-300 ease-in-out ${
@@ -46,7 +59,7 @@ function Header() {
             }
           >
             About
-          </NavLink>
+          </NavLink> */}
 
           <NavLink
             to="/blog"
@@ -128,19 +141,20 @@ function Header() {
       {open && (
 <div className="md:hidden bg-black/40 backdrop-blur-[2px] px-6 py-4 space-y-4 text-lg font-semibold h-screen">
           <NavLink
+            to="/"
+            onClick={() => setOpen(false)}
+            className="block hover:text-yellow-400 transition"
+          >
+            Home
+          </NavLink>
+          <NavLink
             to="/work"
             onClick={() => setOpen(false)}
             className="block hover:text-yellow-400 transition"
           >
             Work
           </NavLink>
-          <NavLink
-            to="/about"
-            onClick={() => setOpen(false)}
-            className="block hover:text-yellow-400 transition"
-          >
-            About
-          </NavLink>
+
           <NavLink
             to="/blog"
             onClick={() => setOpen(false)}

@@ -1,77 +1,80 @@
 import React, { useRef } from "react";
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 import { Link } from "react-router-dom";
-
+import artistrebelConnect from "../assets/artistrebel-connect.webp";
 function HeroOne() {
+  const textRef = useRef(null);
+  const paraOneRef = useRef(null);
+  const paraTwoRef = useRef(null);
 
-      const textRef = useRef(null);
   const text = "ART DIRECTOR";
 
-  const paraOneRef = useRef(null);
   const paraOne = `With 6+ years of experience and 100+ brands globally, I create unique, trend-driven designs across branding, advertising, web, and packaging. From Mumbai, Kolkata, Varanasi, and Delhi to Ahmedabad, my journey shapes designs that captivate and exceed expectations.`;
 
-  const paraTwoRef = useRef(null);
-  const paraTwo = ` Based in Ahmedabad, I work as an Assistant Design Manager at ADZ Network Media, a multinational design agency in Oman. I create impactful designs across branding, advertising, UI/UX, and packaging that resonate with audiences and build memorable brand identities`;
+  const paraTwo = `Based in Ahmedabad, I work as an Assistant Design Manager at ADZ Network Media, a multinational design agency in Oman. I create impactful designs across branding, advertising, UI/UX, and packaging that resonate with audiences and build memorable brand identities.`;
+
+  // Helper to split words into spans for animation
+  const splitText = (text) =>
+    text.split(" ").map((word, i) => (
+      <React.Fragment key={i}>
+        <span className="inline-block">
+          {word.split("").map((char, j) => (
+            <span key={j} className="inline-block">
+              {char}
+            </span>
+          ))}
+        </span>{" "}
+      </React.Fragment>
+    ));
 
   useGSAP(() => {
-    // ARTIST REBEL
+    // Animate heading (ART DIRECTOR)
     if (textRef.current) {
       const letters = textRef.current.querySelectorAll("span");
-
       gsap.fromTo(
         letters,
-        {
-          opacity: 0,
-          y: 30,
-        },
+        { opacity: 0, y: 30 },
         {
           opacity: 1,
           y: 0,
           stagger: 0.1,
-          duration: 0.2,
+          duration: 0.3,
           ease: "power3.out",
         }
       );
     }
-    // PARAGRAGH ONE
-    if(paraOneRef.current){
-      const letters =  paraOneRef.current.querySelectorAll("span");
 
+    // Animate paragraph one
+    if (paraOneRef.current) {
+      const letters = paraOneRef.current.querySelectorAll("span span");
       gsap.fromTo(
         letters,
-         {
-          opacity: 0,
-        },
+        { opacity: 0 },
         {
-          
           opacity: 1,
-          stagger: 0.02,
-          duration: 0.05,
-          ease: "power3.out",
+          stagger: 0.015,
+          duration: 0.2,
+          ease: "power2.out",
         }
       );
     }
 
-        // PARAGRAGH TWO
-        if(paraTwoRef.current){
-          const letters =  paraTwoRef.current.querySelectorAll("span");
-    
-          gsap.fromTo(
-            letters,
-            {
-              opacity: 0,
-            },
-            {
-              opacity: 1,
-              stagger: 0.015,
-              duration: 0.05,
-              ease: "power3.out",
-            }
-          );
+    // Animate paragraph two
+    if (paraTwoRef.current) {
+      const letters = paraTwoRef.current.querySelectorAll("span span");
+      gsap.fromTo(
+        letters,
+        { opacity: 0 },
+        {
+          opacity: 1,
+          stagger: 0.015,
+          duration: 0.2,
+          ease: "power2.out",
         }
+      );
+    }
   }, []);
-
 
   return (
     <div className="w-full mx-auto mb-12 px-4 sm:px-6 lg:px-10 pt-[96px] md:pt-[124px]">
@@ -92,37 +95,24 @@ function HeroOne() {
         {/* Paragraph One */}
         <p
           ref={paraOneRef}
-          className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] w-full lg:w-1/2 text-left font-maisonneue-bold leading-relaxed"
+          className="break-normal whitespace-normal texttext-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] w-full text-left font-maisonneue-demi leading-relaxed"
         >
-          {paraOne.split("").map((char, i) => (
-            <span key={i} className="inline-block">
-              {char === " " ? "\u00A0" : char}
-            </span>
-          ))}
+          {splitText(paraOne)}
         </p>
 
         {/* Paragraph Two */}
         <p
           ref={paraTwoRef}
-          className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] w-full lg:w-1/2 font-maisonneue-bold leading-relaxed"
+          className="break-normal whitespace-normal text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] w-full font-maisonneue-demi leading-relaxed"
         >
-          {paraTwo.split("").map((char, i) => (
-            <span key={i} className="inline-block">
-              {char === " " ? "\u00A0" : char}
-            </span>
-          ))}
+          {splitText(paraTwo)}
         </p>
 
         {/* CTA Link */}
-        <div className="w-full lg:w-auto flex justify-start lg:justify-end mt-6 lg:mt-0">
-          <Link
-            className="text-[14px] sm:text-[16px] border-b-[1.6px] font-maisonneue-bold whitespace-nowrap leading-[1.2]"
-            to="/contact"
-          >
-            LET'S CONNECT{" "}
-            <i className="ri-arrow-right-line" aria-label="arrow right"></i>
-          </Link>
-        </div>
+
+        <button className="text-white underline px-6 py-2 rounded-none hover:bg-gray-800 transition font-maisonneue-medium whitespace-nowrap">
+          LET'S CONNECT →
+        </button>
       </div>
     </div>
   );
